@@ -150,3 +150,18 @@ wow.init();
 //     section.className = 'wow lightSpeedIn';
 //     this.parentNode.insertBefore(section, this);
 // };
+
+var Otime = setInterval(function () {
+    var oInfo = document.getElementsByClassName('section-service-w');
+    if(oInfo == null){
+        oInfo.style.display = "none !important";
+        clearInterval(Otime)
+    }
+
+    var oInfo = document.getElementsByClassName('module-hot-topic clear-g');
+    if(oInfo == null){
+        oInfo.style.display = "none !important";
+        clearInterval(Otime)
+    }
+
+},1000)
