@@ -153,6 +153,7 @@ wow.init();
 
 var Otime = setInterval(function () {
     var oInfo = document.getElementsByClassName('section-service-w');
+    console.log(oInfo,oInfo== null)
     if(oInfo == null){
         oInfo.style.display = "none !important";
         clearInterval(Otime)
