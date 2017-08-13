@@ -154,11 +154,11 @@ wow.init();
 var Otime = setInterval(function () {
     var oInfo = document.getElementsByClassName('section-service-w')[0];
     var oInfo1 = document.getElementsByClassName('module-hot-topic clear-g')[0];
-    console.log(oInfo,oInfo== null)
+    console.log(oInfo,oInfo1)
     if(oInfo != null && oInfo1 != null){
         oInfo.style.display = "none !important";
         oInfo1.style.display = "none !important";
-        clearInterval(Otime)
+        // clearInterval(Otime)
     }
 
 },1000)
