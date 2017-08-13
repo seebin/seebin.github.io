@@ -152,16 +152,12 @@ wow.init();
 // };
 
 var Otime = setInterval(function () {
-    var oInfo = document.getElementsByClassName('section-service-w');
+    var oInfo = document.getElementsByClassName('section-service-w')[0];
+    var oInfo1 = document.getElementsByClassName('module-hot-topic clear-g')[0];
     console.log(oInfo,oInfo== null)
-    if(oInfo != null){
+    if(oInfo != null && oInfo1 != null){
         oInfo.style.display = "none !important";
-        clearInterval(Otime)
-    }
-
-    var oInfo = document.getElementsByClassName('module-hot-topic clear-g');
-    if(oInfo != null){
-        oInfo.style.display = "none !important";
+        oInfo1.style.display = "none !important";
         clearInterval(Otime)
     }
 
