@@ -11,6 +11,7 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
+    
     $('#header_wrapper').scrollToFixed();
     $('.res-nav_click').click(function() {
         $('.main-nav').slideToggle();
@@ -70,14 +71,14 @@ $(document).ready(function() {
     var container = $('#portfolio_wrapper');
 
 
-    container.isotope({
-        animationEngine: 'best-available',
-        animationOptions: {
-            duration: 200,
-            queue: false
-        },
-        layoutMode: 'fitRows'
-    });
+    // container.isotope({
+    //     animationEngine: 'best-available',
+    //     animationOptions: {
+    //         duration: 200,
+    //         queue: false
+    //     },
+    //     layoutMode: 'fitRows'
+    // });
 
     $('#filters a').click(function() {
         $('#filters a').removeClass('active');
@@ -113,21 +114,21 @@ $(document).ready(function() {
             columnNumb = splitColumns(),
             postWidth = Math.floor(winWidth / columnNumb);
 
-        container.find('.portfolio-item').each(function() {
-            $(this).css({
-                width: postWidth + 'px'
-            });
-        });
+        // container.find('.portfolio-item').each(function() {
+        //     $(this).css({
+        //         width: postWidth + 'px'
+        //     });
+        // });
     }
 
     function setProjects() {
         setColumns();
-        container.isotope('reLayout');
+        // container.isotope('reLayout');
     }
 
-    container.imagesLoaded(function() {
-        setColumns();
-    });
+    // container.imagesLoaded(function() {
+    //     setColumns();
+    // });
 
 
     $(window).bind('resize', function() {
@@ -135,6 +136,7 @@ $(document).ready(function() {
     });
 
    $(".fancybox").fancybox();
+   
 });
 
 wow = new WOW({
@@ -142,6 +144,11 @@ wow = new WOW({
     offset: 100
 });
 wow.init();
+
+$("img.lazy").lazyload({
+    threshold : 200
+})
+
 // document.getElementById('').onclick = function() {
 //     var section = document.createElement('section');
 //     section.className = 'wow fadeInDown';

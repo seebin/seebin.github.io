@@ -2364,3 +2364,7 @@ img.img.img-circle.lt-box {/* float: left; */width: 64px;height: auto;}
     .top_left_cont h2, .top_left_cont p, .social_links {text-align: center;}
     
 }
+
+.portfolio_img{
+    height: 240px;
+}
