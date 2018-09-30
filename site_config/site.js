@@ -67,9 +67,12 @@ export default {
   'zh-cn': {
     pageMenu: [
       {
-        key: 'home1',
+        key: 'home',
         text: '首页1',
         link: '/zh-cn/index.html',
+        title:'seebin',
+        keywords:'seebin,words',
+        description:'seebin 123',
       },
       {
         key: 'docs',

@@ -1,6 +1,6 @@
 ---
-key1: hello
-key2: world
+title: hello
+keywords: world
 ---
 
 # 博客1
