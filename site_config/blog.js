@@ -59,7 +59,7 @@ export default {
     postsTitle: '所有文章',
     list: [
       {
-        title: '第一篇博客',
+        title: '第123篇博客',
         author: 'author1',
         dateStr: 'May 12nd，2018',
         desc: '博客描述，总结博客的主体内容',
